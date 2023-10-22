@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Zithoek" Id="{9c8de49d-b1ce-4705-9a07-ff991f84b63c}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Zithoek
+VAR
+	Zithoek_LV			: FB_DALIV2Dimmer1Switch;
+	Zithoek_RV			: FB_DALIV2Dimmer1Switch;
+	Zithoek_LA			: FB_DALIV2Dimmer1Switch;
+	Zithoek_MA			: FB_DALIV2Dimmer1Switch;
+	Zithoek_RA			: FB_DALIV2Dimmer1Switch;
+
+	licht_Zithoek_LV	: Licht_output;
+	licht_Zithoek_RV	: Licht_output;
+	licht_Zithoek_LA	: Licht_output;
+	licht_Zithoek_MA	: Licht_output;
+	licht_Zithoek_RA	: Licht_output;
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

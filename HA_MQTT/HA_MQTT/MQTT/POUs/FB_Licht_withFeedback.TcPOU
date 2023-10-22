@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Licht_withFeedback" Id="{8cc9d070-157f-4f1c-8837-157f3f3920e9}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Licht_withFeedback EXTENDS FB_Light
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Property Name="Light_is_off" Id="{78566db0-b4db-4206-a0d2-623339d33cae}">
+      <Declaration><![CDATA[PROPERTY Light_is_off : bool]]></Declaration>
+      <Get Name="Get" Id="{f2280762-9917-403f-b072-2d00111e3f14}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[IF NOT SUPER^.licht THEN
+	Light_is_off	:= TRUE;
+	
+ELSE
+	Light_is_off	:= FALSE;
+	
+END_IF]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="Light_is_on" Id="{d5425ad7-6d1e-4277-87ae-83ced13ba034}">
+      <Declaration><![CDATA[PROPERTY Light_is_on : bool]]></Declaration>
+      <Get Name="Get" Id="{b80cbd07-5608-417e-887d-977b674a8dcd}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[IF SUPER^.licht THEN
+	Light_is_on	:= TRUE;
+	
+ELSE
+	Light_is_on	:= FALSE;
+	
+END_IF]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+  </POU>
+</TcPlcObject>

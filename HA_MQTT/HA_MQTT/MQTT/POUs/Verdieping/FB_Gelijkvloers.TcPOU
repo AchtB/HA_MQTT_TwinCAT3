@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Gelijkvloers" Id="{6bc23eb7-aad7-4071-8fea-77028dfcc7be}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Gelijkvloers
+VAR
+	Bediening_Keuken	: FB_Drukknoppen;
+	Bediening_Inkom		: FB_Drukknoppen;
+	Bediening_eethoek	: FB_Drukknoppen;
+	Bediening_zithoek	: FB_Drukknoppen;
+	
+	Beweging_Wasplaats	: FB_Sensor;
+	Beweging_WC			: FB_Sensor;
+	Beweging_Keuken		: FB_Sensor;
+	
+	Keuken				: FB_StairwellLight;
+	Wasplaats			: FB_StairwellLight;
+	WC_onder			: FB_StairwellLight;
+	Eethoek				: FB_Eethoek;
+	Zithoek				: FB_Zithoek;
+	Vide				: FB_Dimmer1Switch;
+	
+	licht_keuken		: Licht_output;
+	licht_wasplaats		: Licht_output;
+	licht_wc_onder		: Licht_output;
+	licht_vide			: Licht_output;
+
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

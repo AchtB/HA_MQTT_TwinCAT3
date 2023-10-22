@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Garage" Id="{0386157f-b710-4d7f-97e0-6bc31de81b16}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Garage
+VAR
+	Bediening_deur			: FB_Drukknoppen;
+	Bediening_werkruimte	: FB_Drukknoppen;
+	Garage_links			: FB_StairwellLight;
+	Garage_rechts			: FB_StairwellLight;
+	Garagepoort				: ARRAY [1..4] OF FB_DALIV2Dimmer1Switch;
+	Leeuw					: ARRAY [1..4] OF FB_DALIV2Dimmer1Switch;
+	
+	Poortopener				: FB_Garagepoort;
+	Elektriciteitsmeter		: FB_Verbruikmeter;
+	Leidingwater			: FB_Verbruikmeter;
+	Regenwater				: FB_Verbruikmeter;
+//	Regenwaterput			: FB_niveaumeter;
+	
+	licht_Garage_l			: Licht_output;
+	licht_Garage_r			: Licht_output;
+	licht_Garagepoort		: Licht_output;
+	licht_Leeuw				: Licht_output;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

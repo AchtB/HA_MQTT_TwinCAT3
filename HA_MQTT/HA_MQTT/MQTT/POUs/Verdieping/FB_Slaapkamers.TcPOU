@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Slaapkamers" Id="{44847df4-4416-4be7-95d7-15ad7b00f6b7}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Slaapkamers
+VAR
+	bediening_badkmaer	: FB_Drukknoppen;
+	sensor_nachthal		: FB_sensor;
+	sensor_traphal		: FB_Sensor;
+	
+	master_slaapkamer	: FB_Slaapkamer;
+	linnea_slaapkamer	: FB_Slaapkamer;
+	dakraam_links		: FB_Dakraam;
+	dakraam_rechts		: FB_Dakraam;
+
+	Nachthal			: FB_StairwellDimmer;
+	Traphal				: FB_StairwellDimmer;
+	Badkamer			: FB_Light;
+	Badkamer_spiegel	: FB_Light;
+
+	licht_nachthal		: Licht_output;
+	licht_traphal		: Licht_output;
+	licht_badkamer		: Licht_output;
+	licht_spiegel		: Licht_output;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

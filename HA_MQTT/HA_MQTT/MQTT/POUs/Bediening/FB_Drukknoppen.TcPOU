@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Drukknoppen" Id="{22e8e8d0-4c2e-4077-9faf-f64ad2775a92}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Drukknoppen
+VAR
+	Input		AT %I*	: ARRAY [1..6] OF BOOL;
+	Short_Long			: ARRAY [1..6] OF FB_ShortLongClick;
+	Single_Double		: ARRAY [1..6] OF FB_SingleDoubleClick;
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

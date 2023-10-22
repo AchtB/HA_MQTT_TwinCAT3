@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="AchtB" Id="{2e7579de-54ce-4ab9-9603-b3d5b4dc69f3}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM AchtB
+VAR
+	Woonruimte			: FB_Gelijkvloers;
+	Tuin				: FB_Tuin;
+	Slaapkamers			: FB_Slaapkamers;
+	Garage				: FB_Garage;
+	Technische_ruimte	: FB_Technische_ruimte;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[PrgMqttCom();]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

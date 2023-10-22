@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Slaapkamer" Id="{034e2e8f-00f4-4285-99b7-fac50587ad80}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Slaapkamer
+VAR
+	bediening_bed_L		: FB_Drukknoppen;
+	bediening_bed_R		: FB_Drukknoppen;
+	bediening_deur		: FB_Drukknoppen;
+	
+	Verlichting			: FB_Dimmer1Switch;
+	Verlichting_bureau	: FB_Dimmer1Switch;
+	Verlichting_bed		: FB_Dimmer1Switch;
+	
+	licht				: Licht_output;
+	licht_bureau		: Licht_output;
+	licht_bed			: Licht_output;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

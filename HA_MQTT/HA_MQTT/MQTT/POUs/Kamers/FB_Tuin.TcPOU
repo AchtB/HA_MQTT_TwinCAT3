@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Tuin" Id="{44674784-fdda-4cea-81bb-a218cbdcd0cd}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Tuin
+VAR
+	Beweging_inrit	: FB_Sensor;
+	
+	vijver			: FB_Light;
+	tuin			: FB_Light;
+	hondenhok		: FB_Light;
+	weide			: FB_Light;
+	inrit			: FB_Light;
+	terras			: FB_Dimmer1Switch;
+	barruimte		: ARRAY [1..4] OF FB_DALIV2Dimmer1Switch;
+	brievenbus		: ARRAY [1..4] OF FB_DALIV2Dimmer1Switch;
+	
+	licht_vijver	: Licht_output;
+	licht_tuin		: Licht_output;
+	licht_hondenhok	: Licht_output;
+	licht_weide		: Licht_output;
+	licht_inrit		: Licht_output;
+	licht_terras	: Licht_output;
+	licht_barruimte	: Licht_output;
+	licht_brievenbus: Licht_output;
+	
+	stopcontact_vijverpomp	: FB_Stopcontact;
+	stopcontact_UV_lamp		: FB_Stopcontact;
+	stopcontact_vijverlucht	: FB_Stopcontact;
+	stopcontacten_tuin		: FB_Stopcontact;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

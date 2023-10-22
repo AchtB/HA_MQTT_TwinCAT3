@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Warmtepomp" Id="{a009efd3-353e-4f00-aa50-3faa99f6125b}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Warmtepomp
+VAR
+	Verbruik		: FB_Verbruikmeter;
+	Communicatie	: Warmtepomp_Signalen;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

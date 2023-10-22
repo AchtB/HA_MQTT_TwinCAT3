@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="Licht_output" Id="{7b0e8c27-623b-4e01-a77a-a11209ffc386}">
+    <Declaration><![CDATA[TYPE Licht_output :
+STRUCT
+	bOutput		AT %Q*	: BOOL;
+	nLicht		AT %Q*	: INT;
+	feedback_licht		: INT;
+	status_licht		: BOOL;
+	Inschakeltijd		: REAL;
+	
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

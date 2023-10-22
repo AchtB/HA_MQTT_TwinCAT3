@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Technische_ruimte" Id="{3fcebf2f-f0f3-4762-bbfe-f3d880d53ec5}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Technische_ruimte
+VAR
+	Bediening_TR	: FB_Drukknoppen;
+	
+	TR_verlichting	: FB_StairwellLight;
+	
+	licht_TR		: licht_output;
+	
+	zonnepanelen	: FB_Verbruikmeter;
+	warmtepomp		: FB_Warmtepomp;
+// 	ventilatie
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Eethoek" Id="{183674c2-835c-4854-9f76-d8226d440e25}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Eethoek
+VAR
+	bediening_eethoek	: FB_Drukknoppen;
+	
+	Eettafel			: FB_Dimmer1Switch;
+	Foto_papa			: FB_DALIV2Dimmer1Switch;
+	Foto_whiskey		: FB_DALIV2Dimmer1Switch;
+	Brutale_L			: FB_DALIV2Dimmer1Switch;
+	Brutale_R			: FB_DALIV2Dimmer1Switch;
+	Scene_Eethoek		: FB_ScenesLighting;
+
+	licht_tafel			: Licht_output;
+	licht_Foto_papa		: Licht_output;
+	licht_Foto_whiskey  : Licht_output;
+    licht_Brutale_L	    : Licht_output;
+    licht_Brutale_R	    : Licht_output;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

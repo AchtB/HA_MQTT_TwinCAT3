@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Light" Id="{9d175803-8873-46a0-a95d-9215d0d9e0f1}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Light
+VAR
+	licht		AT %Q*	: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="Turn_off" Id="{288dcc40-7e6a-4bda-a2c8-45b15b6f44a5}">
+      <Declaration><![CDATA[METHOD Turn_off : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[licht	:= FALSE;
+]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Turn_on" Id="{9b2bb554-fa6e-4c1e-b69b-a3f60fcd7250}">
+      <Declaration><![CDATA[METHOD Turn_on : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[licht	:= TRUE;
+]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>

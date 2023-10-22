@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="Stopcontact_output" Id="{fad6a2a4-8347-4579-9987-d2f43f1c2e9e}">
+    <Declaration><![CDATA[TYPE Stopcontact_output  EXTENDS Licht_output :
+STRUCT
+	Verbruik	: REAL;
+	Vermogen	: REAL;
+	
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
